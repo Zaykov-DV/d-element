@@ -92,7 +92,7 @@ td, th {
   font-weight: normal;
   src: local("Galien"), url("./fonts/Galien-Regular.woff2") format("woff2"), url("./fonts/Galien-Regular.woff") format("woff"); }
 
-.header__button {
+.button {
   background: #5A98D0;
   box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
   border-radius: 10px;
@@ -104,19 +104,11 @@ td, th {
   text-align: center;
   letter-spacing: 0.04em;
   color: #FFFFFF; }
+  .button:hover {
+    background: #377fc0; }
 
 .footer__button {
-  background: #5A98D0;
-  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
-  border-radius: 10px;
-  padding: 15px 74px;
-  cursor: pointer;
-  font-family: Gilroy, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #FFFFFF; }
+  padding: 15px 74px; }
 
 .footer {
   background: #5A98D0;
@@ -287,14 +279,33 @@ textarea {
   color: #1F3F68;
   opacity: 0.2; }
 
+a.main__text-default:hover {
+  color: #cccccc; }
+
 .card__link {
   font-family: Gilroy, sans-serif;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0.05em;
-  color: #5A98D0;
-  background: url("../img/arrow.png") no-repeat 100%;
-  padding-right: 44px; }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #5A98D0; }
+  .card__link:hover {
+    color: #2b6599; }
+
+#icon {
+  width: 16px;
+  height: 16px;
+  fill: #5A98D0;
+  margin-left: 16px; }
+  #icon:hover {
+    fill: #2b6599; }
+
+.card__link-wrapper {
+  color: #5A98D0; }
+  .card__link-wrapper:hover {
+    color: #2b6599; }
 
 .header {
   margin-top: 50px;
@@ -384,8 +395,6 @@ textarea {
   background: #FFFFFF;
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px; }
-  .section__card:first-child {
-    margin-left: 50px; }
 
 .card__image {
   margin-left: 25px; }
@@ -426,60 +435,40 @@ textarea {
 .section__feedback-left {
   max-width: 300px; }
 
-.header__title {
-  font-family: Galien, sans-serif;
-  font-size: 54px;
-  line-height: 74px;
-  letter-spacing: 0.04em;
-  color: #1F3F68; }
-
-.header__descr {
-  font-family: Gilroy,sans-serif;
+.main__text {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.05em;
-  color: #1F3F68;
-  opacity: 0.6; }
+  opacity: 0.6;
+  color: #1F3F68; }
 
-.section__title {
-  font-family: Gilroy, sans-serif;
+.main__text-default {
+  color: #ffffff; }
+
+.main__text-filled {
+  opacity: 1; }
+
+.main__title {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   line-height: 46px;
   letter-spacing: 0.05em;
   color: #316099; }
 
+.main__title-default {
+  color: #ffffff; }
+
 .card__title {
-  font-family: Gilroy ,sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.05em;
   color: #1F3F68;
   text-transform: capitalize; }
 
-.card__descr {
-  font-family: Gilroy, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  color: #1F3F68;
-  opacity: 0.6; }
-
-.footer__title {
-  font-family: Gilroy, sans-serif;
-  font-size: 36px;
-  line-height: 46px;
-  color: #FFFFFF; }
-
-.footer__descr {
-  font-family: Gilroy, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-  opacity: 0.6; }
-
 .client__text {
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 20px;
   line-height: 46px;
   letter-spacing: 0.02em;
@@ -487,50 +476,28 @@ textarea {
   text-transform: uppercase; }
 
 .client__link {
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 20px;
   line-height: 46px;
   letter-spacing: 0.02em;
   color: #FFFFFF; }
 
 .contacts__title {
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 28px;
   line-height: 46px;
   letter-spacing: 0.02em;
   color: #FFFFFF; }
 
-.contact__item-descr {
-  font-family: Gilroy, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  color: #FFFFFF; }
-
 .contact__item-title {
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.05em;
   color: #FFFFFF; }
 
-.contact__item-subtitle {
-  font-family: Gilroy, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  color: #FFFFFF; }
-
-.copyright__text {
-  font-family: Gilroy, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-  opacity: 0.4; }
-
 .feedback__title {
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 44px;
   line-height: 74px;
   text-align: center;
@@ -538,7 +505,7 @@ textarea {
   color: #FFFFFF; }
 
 .feedback__subtitle {
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -546,16 +513,15 @@ textarea {
   color: rgba(255, 255, 255, 0.6); }
 
 .section__subtitle {
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.04em;
   color: #1F3F68; }
 
-.section__text {
-  font-family: Gilroy, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
+.header__title {
+  font-family: "Galien", Arial, sans-serif;
+  font-size: 54px;
+  line-height: 74px;
   letter-spacing: 0.04em;
-  color: #1F3F68;
-  opacity: 0.6; }
+  color: #1F3F68; }

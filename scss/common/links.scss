@@ -1,9 +1,36 @@
+a.main__text-default:hover {
+  color: darken(#fff, 20%)
+}
+
 .card__link {
   font-family: Gilroy, sans-serif;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  //background: url("../img/arrow.png") no-repeat 100%;
   color: #5A98D0;
-  background: url("../img/arrow.png") no-repeat 100%;
-  padding-right: 44px;
+  &:hover {
+    color: darken(#5A98D0, 20%)
+  }
+}
+
+
+#icon {
+  width: 16px;
+  height: 16px;
+  fill: #5A98D0;
+  margin-left: 16px;
+  &:hover {
+    fill: darken(#5A98D0, 20%)
+  }
+}
+
+.card__link-wrapper {
+  color: #5A98D0;
+  &:hover {
+    color: darken(#5A98D0, 20%)
+  }
 }
